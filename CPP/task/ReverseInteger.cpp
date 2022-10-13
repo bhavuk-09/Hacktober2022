@@ -22,7 +22,28 @@ int main() {
     cout<<res;
 }
 
+#include <iostream>
+using namespace std;
+int reverseInteger(int x){
+    if(x<-231 or x>231){
+        return 0;
+    }
+    int rev=0;
+    while(x!=0){
+        rev= rev*10+ x%10;
+        x=x/10;
+    }
+    return rev;
+}
+
+int main() {
+    int x;
+    cin>>x;
+    int res=reverseInteger(x);
+    cout<<res;
+}
  
+
 
 // Example 1:
 
